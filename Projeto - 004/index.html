@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        input#button {
+            margin: 5px 5px 5px 0px;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <h2>Login</h2>
+    <form action="processa.php">
+        <label for="email">E-Mail :</label> <br>
+        <input type="email" name="email" id="email"> <br>
+
+        <label for="senha">Senha :</label> <br>
+        <input type="password" name="senha" id="senha"> <br>
+
+        <label for="sexo">Sexo :</label> <br>
+        <input type="radio" name="sexo" id="sexo" value="masc"> Masculino <br>
+        <input type="radio" name="sexo" id="sexo" value="femi"> Feminino <br>
+
+        <input type="button" value="Entrar" id="button">
+    </form>
+</body>
+</html>
