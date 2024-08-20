@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Barra de navegação lateral</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 20px;
+        }
+
+        ul a {
+            width: 200px;
+            height: 40px;
+            display: block;
+            background-image: url(imagens/menu.png);
+            background-repeat: no-repeat;
+            background-position: left bottom;
+            text-indent: 30px;
+            line-height: 40px;
+        }
+
+        ul a:hover {
+            transition-duration: 1s;
+            background-position: right bottom;
+        }
+
+        
+    </style>
 </head>
 <body>
-    
+    <h1>Lista de atividades</h1>
+
+    <ul>
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">Sobre</a>
+        </li>
+        <li>
+            <a href="#">Contato</a>
+        </li>
+    </ul>
+
+    <!-- <ul>
+        <li>dentista</li>
+        <li>mercado</li>
+        <li>almoço</li>
+        <li>série</li>
+    </ul> -->
 </body>
 </html>
