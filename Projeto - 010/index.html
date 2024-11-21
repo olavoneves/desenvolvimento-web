@@ -3,23 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barra de navegação lateral</title>
+    <title>Barra de navegação horizontal</title>
     <style>
         ul {
             list-style-type: none;
-            margin: 0px;
-            padding: 20px;
+            background-image: url(Imagens/Imagens.02/fundo-horizontal.png);
+            background-repeat: repeat-x;
+            width: 88vw;
+            height: 33px;
+            float: left;
         }
 
-        ul a {
-            width: 200px;
-            height: 40px;
-            display: block;
-            background-image: url(imagens/menu.png);
-            background-repeat: no-repeat;
-            background-position: left bottom;
-            text-indent: 30px;
-            line-height: 40px;
+        ul li {
+            float: left;
         }
 
         ul a:hover {
@@ -27,8 +23,17 @@
             background-position: right bottom;
         }
 
+        ul a {
+            display: block;
+            padding: 0 2em;
+            line-height: 2em;
+            margin: 0px;
+            background-image: url(Imagens/Imagens.02/divisor.png);
+            background-repeat: repeat-y;
+        }
+
         a {
-            color: white;
+            color: black;
             text-decoration: none;
             font-weight: bold;
         }
@@ -38,7 +43,7 @@
             color: white;
             text-decoration: none;
             font-weight: bolder;
-        }
+        }  
     </style>
 </head>
 <body>
@@ -55,12 +60,5 @@
             <a href="#">Contato</a>
         </li>
     </ul>
-
-    <!-- <ul>
-        <li>dentista</li>
-        <li>mercado</li>
-        <li>almoço</li>
-        <li>série</li>
-    </ul> -->
 </body>
 </html>
