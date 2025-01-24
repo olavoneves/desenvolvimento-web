@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Líquidas</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background: #f2f2f2;
+        }
+
+        #container {
+            width: 85%;
+            margin: 0 auto;
+            background: #fff;
+        }
+
+        #marca {
+            height: 100px;
+            background-image: url(Imagens/cabecalho.jpg);
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            text-align: center;
+            line-height: 200px;
+            padding: 50px 0px 100px 0px;
+            font-weight: bolder;
+        }
+
+        #conteudo {
+            width: 80%;
+            float: right;
+            margin: 0px;
+            height: 650px;
+        }
+
+        #conteudo h1 {
+            text-align: center;
+        }
+
+        img {
+            width: 95%;
+            padding: 2%;
+        }
+
+    /*  #img {
+            width: 95%;
+            overflow: hidden;
+        }
+
+        #conteudo p {
+            padding: 13px;
+            text-align: justify;
+        } 
+    */
+
+        #navegacao {
+            width: 16%;
+            float: left;
+            margin: 0px;
+            padding: 6px;
+            background: #d1d1d1;
+            text-align: justify;
+            height: 650px;
+        }
+
+        #navegacao h3 {
+            text-align: center;
+            padding: 0px;
+        }
+
+        #navegacao ul {
+            list-style-type: none;
+            padding: 0px;
+        }
+
+        #navegacao li {
+            color: darkblue;
+            text-decoration: none;
+            font-weight: lighter;
+            padding: 0px 0px 0px 1px;
+        }
+
+        #navegacao li:hover {
+            color: darkblue;
+            font-weight: bolder;
+        }
+
+        #rodape {
+            clear: both;
+            background: #c4c4c4;
+            padding: 5px;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="marca">Marca</div>
+        <div id="conteudo">
+            <h1>O que a marca representa ?</h1>
+
+            <img src="Imagens/natureza.jpg" alt="flex">
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, harum provident fuga esse modi rem nesciunt non aspernatur quaerat ducimus labore et ex culpa asperiores nisi. Facere! Lorem, ipsum dolor sit amet consectetur adipisicing elit. At nostrum minus molestias dolores voluptatibus ipsam assumenda? Voluptatibus quidem cumque soluta tempora, quos eos inventore beatae fugit quo, itaque placeat esse! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis nostrum provident maxime nesciunt eos officia tenetur laudantium officiis quo. In dolorem ipsum ipsam possimus tenetur ex et vitae nam commodi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat impedit qui maxime sit ipsum perspiciatis molestias, iure quaerat ex quasi! Ad, illo. Voluptas amet magni autem officia suscipit? Ut, nisi.</p>
+        </div>
+        <div id="navegacao">
+        <h3>Menu</h3>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Notícias</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        </div>
+        <div id="rodape">Rodape</div>
+    </div>
+</body>
+</html>
