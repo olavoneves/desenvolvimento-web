@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Estilizadas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h2 {
+            background-color: rgb(178, 135, 219);
+            border-radius: 20px 20px 0px 0px;
+            color: white;
+            text-align: center;
+        }
+
+        table {
+            width: 70%;
+            margin: 0px auto auto auto;
+            border-collapse: separate;
+        }
+
+        th, td {
+            padding: 4px;
+        }
+
+        th {
+            text-transform: uppercase;
+            border: 2px solid rgb(180, 149, 210);
+        }
+
+        tr.cinza {
+            background-color: rgb(177, 176, 176);
+        }
+
+        .preço {
+            text-align: center;
+        }
+
+        tr#hover:hover {
+            background-color: rgb(129, 222, 225);
+        }
+    </style>
+</head>
+<body>
+    <h2>Estilizando Tabelas</h2>
+    <table>
+
+        <tr>
+            <th>Código</th>
+            <th>Produto</th>
+            <th class="preço">Preço</th>
+        </tr>
+
+        <tr id="hover">
+            <td>001</td>
+            <td>Notebook</td>
+            <td class="preço">R$ 2.900</td>
+        </tr>
+
+        <tr class="cinza" id="hover">
+            <td>002</td>
+            <td>Celular</td>
+            <td class="preço">R$ 4.900</td>
+        </tr>
+
+        <tr id="hover">
+            <td>002</td>
+            <td>Tablet</td>
+            <td class="preço">R$ 1.900</td>
+        </tr>
+    </table>
+</body>
+</html>
