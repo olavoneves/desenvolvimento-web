@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilizando Formulários</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset {
+            padding: 1em;
+            border-radius: 10px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        div {
+            padding: 5px;
+        }
+
+        label {
+            display: block;
+        }
+
+        input {
+            border-radius: 8px;
+            border: 1px solid black;
+        }
+
+        input.fim {
+            padding: 5px 10px 5px 5px;
+            margin: 5px 30px 5px 5px;
+        }
+
+        input#enviar {
+            background-color: rgb(87, 199, 87);
+            font-weight: bolder;
+        }
+        
+        input#enviar:hover {
+            background-color: rgb(146, 246, 153);
+        }
+
+        input.fim {
+            background-color: rgb(235, 43, 43);
+            font-weight: bolder;
+        }
+
+        input.fim:hover {
+            background-color: rgb(255, 147, 147);
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+
+        <fieldset>
+            <legend>Detalhes de contato</legend>
+
+            <div>
+                <label for="nome">Nome :</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div>
+                <label for="url">URL :</label>
+                <input type="url" name="url" id="url">
+            </div>
+
+            <div id="fim">
+                <input type="button" value="Sair" class="fim">
+
+                <input type="button" value="Enviar" id="enviar" class="fim">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
