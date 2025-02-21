@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fotos</title>
+    <title>Folha da Cidade</title>
+    <link rel="shortcut icon" href="Imagens/logo.png" type="image/x-icon">
     <style>
         * {
             margin: 0px;
@@ -48,7 +49,7 @@
             padding: 45px 60px 20px 0px;
         }
 
-        a {
+        menu > a {
             text-decoration: none;
             color: white;
             background-color: rgb(200, 76, 76);
@@ -58,10 +59,179 @@
             box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.248);
         }
 
-        a:hover, a:active {
+        menu > a:hover, a:active {
             background-color: rgb(148, 46, 46);
         }
-        
+
+        section {
+            background-color: #f5f5f5;
+            width: 85%;
+            margin: 60px auto 0px auto;
+        }
+
+        #tres #primario {
+            width: 30%;
+            float: left;
+            margin: 0px 0px 20px 21%;
+        }
+
+        #dois #primario {
+            width: 50%;
+            float: left;
+            margin: 0px 0px 20px 25%;
+        }
+
+        #uma #primario {
+            width: 85%;
+            float: left;
+            margin: 0px 0px 20px 0px;
+        }
+
+        #tres #secundario {
+            width: 30%;
+            float: left;
+            margin: 0px 0px 20px 2%;
+        }
+
+        #tres #lateral {
+            width: 20%;
+            float: left;
+            margin: 0px 0px 20px -83.7%;
+        }
+
+        #dois #lateral {
+            width: 20%;
+            float: left;
+            margin: 0px 0px 20px -80%;
+        }
+
+        .caixa {
+            background-color: #f3f3f3;
+            background-image: url(Imagens/fundo-caixa.png);
+            margin: 10px 0px;
+            padding: 5px;
+        }
+
+        h2 {
+            background-color: #294c71;
+            padding: 5px;
+            font-size: 1em;
+            font-weight: normal;
+            color: white;
+        }
+
+        .caixa-conteudo {
+            background-color: white;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        ul {
+            padding: 5px 0px 0px 4px;
+            margin: 0px;
+            list-style: none;
+        }
+
+        #lateral ul a {
+            font-size: 0.9em;
+            padding: 3px;
+            display: block;
+            line-height: 30px;
+            color: #000;
+            text-decoration: none;        
+        }
+
+        #lateral ul a:hover {
+            color: #a1a1a1;
+            background: #f9f9f9 url(Imagens/marcador.png) no-repeat left center;
+            padding: 0px 0px 0px 20px;
+        }
+
+        label {
+            display: block;
+            cursor: pointer;
+        }
+
+        input {
+            font-size: 0.9em;
+            background-color: white;
+            padding: 5px;
+            margin: 2px 2px 2px 2px ;
+        }
+
+        input#email {
+            width: 80%;
+        }
+
+        input#cadastro {
+            border-radius: 5px;
+            font-weight: 500;
+            border: 1px solid rgb(200, 76, 76);
+            background-color: rgb(200, 76, 76);
+            color: white;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.409);
+        }
+
+        input#cadastro:hover, input#cadastro:active {
+            background-color: #294c71;
+            color: white;
+            border: 1px solid #294c71;
+        }
+
+        img {
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.212);
+            margin: 10px 0px 0px 0px;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            display: inline;
+            font-size: 0.8em;
+            padding: 5px;
+            background-color: rgb(148, 46, 46);
+            color: white;
+        }
+
+        p {
+            padding: 5px;
+        }
+
+        div.caixa-conteudo > a {
+            text-decoration: none;
+            color: rgb(200, 76, 76);
+            font-weight: 500;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        h3#mundo {
+            background-color: white;
+            color: rgb(36, 36, 221);
+            font-weight: 600;
+            font-size: 1em;
+        }
+
+        ul.lista-noticias li {
+            border-bottom: 1px solid #ccc;
+            padding: 5px;
+        }
+
+        ul.lista-noticias li:hover {
+            background-color: #eee;
+            cursor: pointer;
+        }
+
+        .lista-noticias li a img {
+            float: left;
+            margin: 5px;
+        }
+
+        ul.lista-noticias li a {
+            text-decoration: none;
+            font-size: 0.8em;
+            color: rgb(113, 113, 238);
+        }
+
         footer {
             clear: both;
             color: #fff;
@@ -73,24 +243,70 @@
 </head>
 <body id="uma">
     <header id="topo">
-        <h1 class="logo">Folha Cidade</h1>
-    <menu>
-        <a href="index.html">Home</a>
-        <a href="brasil.html">Brasil</a>
-        <a href="internacional.html">Internacional</a>
-        <a href="economia.html">Economia</a>
-        <a href="saude.html">Saúde</a>
-        <a href="ciencia.html">Ciência</a>
-        <a href="fotos.html">Fotos</a>
-    </menu>
-</header>
-<section>
+            <h1 class="logo">Folha Cidade</h1>
+        <menu>
+            <a href="index.html">Home</a>
+            <a href="brasil.html">Brasil</a>
+            <a href="internacional.html">Internacional</a>
+            <a href="economia.html">Economia</a>
+            <a href="saude.html">Saúde</a>
+            <a href="ciencia.html">Ciência</a>
+            <a href="fotos.html">Fotos</a>
+        </menu>
+    </header>
+    <section>
 
-    <div id="primario">Oi</div>
-
-</section>
-<footer>
-    &copy; Copyright 2000-2018 Notícias Cidade
-</footer>
+        <div id="primario">
+            <div class="caixa">
+                <h2>Destaque</h2>
+                <div class="caixa-conteudo">
+                    <h3>Nova Legislação</h3>
+                    <img src="Imagens/taxi.jpg" alt="flexivel" width="100%">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ducimus voluptas nisi molestias odio porro officia iure veniam nesciunt quaerat! Odit mollitia a amet odio earum tempora sapiente deleniti harum.
+                    </p>
+                    <a href="">Leia mais !</a>
+                </div>
+            </div>
+            <div class="caixa">
+                <h2>Mundo</h2>
+                <div class="caixa-conteudo">
+                    <ul class="lista-noticias">
+                        <li>
+                            <a href="">
+                                <img src="Imagens/tecnologia.jpg" alt="flexivel" width="70">
+                                <h3 id="mundo">Novas tecnologias</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="Imagens/tecnologia.jpg" alt="flexivel" width="70">
+                                <h3 id="mundo">Novas tecnologias</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="Imagens/tecnologia.jpg" alt="flexivel" width="70">
+                                <h3 id="mundo">Novas tecnologias</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="Imagens/tecnologia.jpg" alt="flexivel" width="70">
+                                <h3 id="mundo">Novas tecnologias</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <footer>
+        &copy; Copyright 2000-2018 Notícias Cidade
+    </footer>
 </body>
 </html>
